@@ -75,7 +75,7 @@ admin_34 : "failed to seek."
 
 # start
 start_1 : "thanks for adding me in {0}.\n{1} can now play songs in this chat.\n\nfor getting any type of help you can join our support group."
-start_2 : "**hey,**\n **this is {0}**\n **a powerful music player bot with some awesome and useful features.**\n\n**all of my commands are listed in the help button.**"
+start_2 : "**Haayi, My name is Doki.I'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.**"
 start_3 : "hey,\n this is {0}\n\na fast and powerful music player bot with some awesome features.\n\nassistant username:- @{1}\nassistant id:- {2}"
 start_4 : "the owner of {0}, [{1}] just joined your chat."
 start_5 : "the sudo user of {0}, [{1}] just joined your chat."
