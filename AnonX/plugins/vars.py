@@ -15,7 +15,7 @@ VARS_COMMAND = get_command("VARS_COMMAND")
 @app.on_message(filters.command(VARS_COMMAND) & SUDOERS)
 async def varsFunc(client, message):
     mystic = await message.reply_text(
-        "ᴩʟᴇᴀsᴇ ᴡᴀɪᴛ... ɢᴇᴛᴛɪɴɢ ʏᴏᴜʀ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs..."
+        "plz wait getting ur config variables..."
     )
     v_limit = await get_video_limit()
     MUSIC_BOT_NAME = config.MUSIC_BOT_NAME
@@ -78,7 +78,7 @@ async def varsFunc(client, message):
     owner_id = " ,".join(owners)
     tg_aud = convert_bytes(config.TG_AUDIO_FILESIZE_LIMIT)
     tg_vid = convert_bytes(config.TG_VIDEO_FILESIZE_LIMIT)
-    text = f"""**ᴍᴜsɪᴄ ʙᴏᴛ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs:**
+    text = f"""**music bot config variables:**
 
 **<u>ʙᴀsɪᴄ ᴠᴀʀɪᴀʙʟᴇs:</u>**
 **ᴍᴜsɪᴄ_ʙᴏᴛ_ɴᴀᴍᴇ** : `{MUSIC_BOT_NAME}`
