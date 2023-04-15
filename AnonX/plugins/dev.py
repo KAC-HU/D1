@@ -38,7 +38,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 async def executor(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="**ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴇxᴇᴄᴜᴛᴇ ʙᴀʙʏ ?**"
+            message, text="**What Uh Wanna Execute?**"
         )
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
@@ -126,7 +126,7 @@ async def forceclose_command(_, CallbackQuery):
     if CallbackQuery.from_user.id != int(user_id):
         try:
             return await CallbackQuery.answer(
-                "» ɪᴛ'ʟʟ ʙᴇ ʙᴇᴛᴛᴇʀ ɪғ ʏᴏᴜ sᴛᴀʏ ɪɴ ʏᴏᴜʀ ʟɪᴍɪᴛs ʙᴀʙʏ.", show_alert=True
+                "it Will Be Better If Uh Stay in Ur Limits.", show_alert=True
             )
         except:
             return
@@ -146,7 +146,7 @@ async def forceclose_command(_, CallbackQuery):
 async def shellrunner(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="**ᴇxᴀᴍᴩʟᴇ :**\n/sh git pull"
+            message, text="**Example :**\n/sh git pull"
         )
     text = message.text.split(None, 1)[1]
     if "\n" in text:
