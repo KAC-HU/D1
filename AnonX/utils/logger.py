@@ -8,9 +8,9 @@ async def play_logs(message, streamtype):
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
         else:
-            chatusername = "ᴩʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
+            chatusername = "PVT CHAT"
         logger_text = f"""
-**{MUSIC_BOT_NAME} ᴩʟᴀʏ ʟᴏɢɢᴇʀ**
+**{MUSIC_BOT_NAME} Play Logger**
 
 **ᴄʜᴀᴛ:** {message.chat.title} [`{message.chat.id}`]
 **ᴜsᴇʀ:** {message.from_user.mention}
