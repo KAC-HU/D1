@@ -100,9 +100,9 @@ async def settings_back_markup(
 ## Audio and Video Quality
 async def gen_buttons_aud(_, aud):
     if aud == "High":
-        buttons = audio_quality_markup(_, high=True)
+        buttons = audio_quality_markup(_, high=False)
     elif aud == "Medium":
-        buttons = audio_quality_markup(_, medium=True)
+        buttons = audio_quality_markup(_, medium=False)
     elif aud == "Low":
         buttons = audio_quality_markup(_, low=True)
     return buttons
@@ -110,9 +110,9 @@ async def gen_buttons_aud(_, aud):
 
 async def gen_buttons_vid(_, aud):
     if aud == "High":
-        buttons = video_quality_markup(_, high=True)
+        buttons = video_quality_markup(_, high=False)
     elif aud == "Medium":
-        buttons = video_quality_markup(_, medium=True)
+        buttons = video_quality_markup(_, medium=False)
     elif aud == "Low":
         buttons = video_quality_markup(_, low=True)
     return buttons
