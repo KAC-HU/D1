@@ -13,7 +13,7 @@ API_HASH = getenv("API_HASH", "858d65155253af8632221240c535c314")
 BOT_TOKEN = getenv("BOT_TOKEN", "5858600782:AAFtbxUVLd44CDq-mKfk8M-HpbTqBA3CxEQ")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://anicadeupload:anicade123@cluster0.z0a8l6k.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001977873075"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001652671967"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "DOKI")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "6219768950").split()))
@@ -25,8 +25,8 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/AnonymousX1025/AnonX
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/DokiSupport")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DokiSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/togaSupport")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/togaSupport")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
