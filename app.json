@@ -1,50 +1,53 @@
 {
-    "name": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "name": "Dz Music",
+    "description": "music.",
+    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
     "keywords": [
-    "python3",
     "telegram",
-    "bot",
-    "AnonX",
-    "MusicBot",
-    "telegram-bot",
+    "music",
+    "voice-chat",
     "pyrogram"
     ],
+    "stack": "container",
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "26788480",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "858d65155253af8632221240c535c314",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "True",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "6116368199:AAHh1vIFBFQjbBYpFSlapwabtsnPVlTkpU0",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "",
-        "required": true
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
+        "value": "mongodb+srv://anicadeupload:anicade123@cluster0.z0a8l6k.mongodb.net/?retryWrites=true&w=majority",
+        "required": false
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
+        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "value": "TOGA",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "5163444566",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
+        "value": "AQA7jK4cbJcKMFDoak0Ud0VJI6n4XW4buBDbw7g05DXFOfUMT5IIPDT6tNa_dWL2gt6ntGE_wnfWEUyK9o66LOG2UxdGOgUMrnWw0G0TChMMsdsV8TkZkwkIA5qZQp862S7NMs9yIkPPZOzCdu45zb79rpl6dVMtn4fVeSOJ8SEC6UWsjFPRmhN38R4X8UwvrhTMfwvDu1fXYkFfqRj16WtuVLAukdTK4g7-agC4J4Wey07m2vAiIUDsl8vnsm43VR2beuxFFeTt_u12Lp5zvcUzWytITAnPsD9qwpOhjhvAffpimUcTxVFCxsmkgEki0si6BmAQVH-uj23lEuXAKcxzAAAAAVbwES0A",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -57,9 +60,99 @@
         "value": "",
         "required": false
       },
+      "DURATION_LIMIT": {
+        "description": "duration limit, default is 60",
+        "value": "180",
+        "required": false
+      },
       "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "value": "-1001652671967",
+        "required": true
+      },
+      "SUPPORT_GROUP": {
+        "description": "support group use https at first",
+        "value": "https://t.me/togasupport",
+        "required": false
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "ch",
+        "value": "https://t.me/togasupport",
+        "required": false
+      },
+      "SPOTIFY_CLIENT_ID": {
+        "description": "spotify",
+        "value": "a85537ebcdd148beaf36e875fce7aab4",
+        "required": false
+      },
+      "SPOTIFY_CLIENT_SECRET": {
+        "description": "dzmusic",
+        "value": "52b5bbaa7c5b400db1f6c48f501490a0",
+        "required": false
+      },
+      "PING_IMG_URL": {
+        "description": "dzmusic",
         "value": "",
+        "required": false
+      },
+      "CLEANMODE_MINS": {
+        "description": "dzmusic",
+        "value": "180",
+        "required": false
+      },
+      "START_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "PLAYLIST_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "GLOBAL_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "STATS_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "TELEGRAM_AUDIO_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "TELEGRAM_VIDEO_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "STREAM_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "SOUNCLOUD_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "YOUTUBE_IMG_URL": {
+        "description": "dzmusic",
+        "value": "",
+        "required": false
+      },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/kac-hu/zetsu",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
         "required": true
       }
     },
@@ -72,7 +165,16 @@
           },
           {
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          },
+          {
+              "url": "https://github.com/xrisk/heroku-opus"
           }
       ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "eco"
+          }
+      },
       "stack": "container"
   }
